@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:wght@700;900&family=Overpass:wght@300;400;500;600;700&family=Poppins:wght@400;700;800&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__top">
+        <form class="form">
+          <div class="day">
+            <label for="day" class="label-day">DAY</label>
+            <input type="text" placeholder="DD" class="day-input-value" />
+            <p class="error-message error-message-day hidden"></p>
+          </div>
+          <div class="month">
+            <label for="month" class="label-month">MONTH</label>
+            <input type="text" placeholder="MM" class="month-input-value" />
+            <p class="error-message error-message-month hidden"></p>
+          </div>
+          <div class="year">
+            <label for="year" class="label-year">YEAR</label>
+            <input type="text" placeholder="YYY" class="year-input-value" />
+            <p class="error-message error-message-year hidden"></p>
+          </div>
+          <div class="button-container">
+            <button class="button">
+              <img src="./assets/images/icon-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="main__bottom">
+        <div class="years">
+          <p class="years-value">- -</p>
+          <span>years</span>
+        </div>
+        <div class="months">
+          <p class="months-value">- -</p>
+          <span> months</span>
+        </div>
+        <div class="days">
+          <p class="days-value">- -</p>
+          <span> days</span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
